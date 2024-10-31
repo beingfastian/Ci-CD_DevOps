@@ -1,0 +1,29 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.1
+2 info using node@v22.3.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\saadr\Desktop\Hanzala\.npmrc
+5 silly config load:file:C:\Users\saadr\.npmrc
+6 silly config load:file:C:\Users\saadr\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm config set unsafe-perm true
+8 verbose argv "config" "set" "unsafe-perm" "true"
+9 verbose logfile logs-max:10 dir:C:\Users\saadr\Desktop\Hanzala\%APPDATA%\npm-cache\_logs\2024-10-31T16_38_54_957Z-
+10 verbose logfile C:\Users\saadr\Desktop\Hanzala\%APPDATA%\npm-cache\_logs\2024-10-31T16_38_54_957Z-debug-0.log
+11 info config set "unsafe-perm" "true"
+12 silly logfile start cleaning logs, removing 1 files
+13 verbose stack Error: `unsafe-perm` is not a valid npm option
+13 verbose stack     at Config.set (C:\Program Files\nodejs\node_modules\npm\lib\commands\config.js:186:15)
+13 verbose stack     at Config.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\config.js:151:20)
+13 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\npm.js:251:63
+13 verbose stack     at Object.start (C:\Program Files\nodejs\node_modules\npm\node_modules\proc-log\lib\index.js:101:21)
+13 verbose stack     at #exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:250:17)
+13 verbose stack     at Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:207:25)
+13 verbose stack     at module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:65:29)
+14 error `unsafe-perm` is not a valid npm option
+15 verbose cwd C:\Users\saadr\Desktop\Hanzala
+16 verbose os Windows_NT 10.0.22631
+17 verbose node v22.3.0
+18 verbose npm  v10.8.1
+19 verbose exit 1
+20 verbose code 1
+21 error A complete log of this run can be found in: C:\Users\saadr\Desktop\Hanzala\%APPDATA%\npm-cache\_logs\2024-10-31T16_38_54_957Z-debug-0.log
