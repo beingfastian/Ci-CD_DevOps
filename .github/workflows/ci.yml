@@ -16,10 +16,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # or your desired version
+          node-version: '18' # Update to Node.js v18 or later
 
       - name: Install dependencies
         run: npm install
+
+      - name: Fix permissions
+        run: chmod +x node_modules/.bin/eslint
 
       - name: Run ESLint
         run: npm run lint
