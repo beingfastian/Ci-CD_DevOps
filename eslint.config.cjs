@@ -1,27 +1,20 @@
 // eslint.config.cjs
-module.exports = [
-    {
-        languageOptions: {
-            globals: {
-                browser: true,
-                es2021: true,
-            },
-            parserOptions: {
-                ecmaVersion: 12,
-                sourceType: 'module',
-            },
+module.exports = {
+    languageOptions: {
+        globals: {
+            browser: true,
+            es2021: true,
+            structuredClone: 'readonly', // Declare structuredClone as global if you're using it
         },
-        rules: {
-            'no-console': 'off', // Allow console logs
+        parserOptions: {
+            ecmaVersion: 12, // This is equivalent to ES2021
+            sourceType: 'module',
         },
     },
-    // ESLint recommended rules
-    {
-        rules: {
-            'no-unused-vars': 'warn',
-            'no-console': 'off',
-            'semi': ['error', 'always'],
-            // Add more rules as needed
-        },
+    rules: {
+        'no-unused-vars': 'warn', // Warn on unused variables
+        'no-console': 'off', // Allow console logs
+        'semi': ['error', 'always'], // Require semicolons
+        // Add more rules as needed
     },
-];
+};
