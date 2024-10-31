@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web App</title>
+    <title>Web App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Hello, World!</h1>
-        <button id="clickMe">Click Me!</button>
-        <p id="message"></p>
-    </div>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My d Web App</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Home Section</h2>
+                <p>Welcome to the advance version of this simple web app. This page is a demonstration of HTML, CSS, and JavaScript, designed to provide a more interactive and engaging experience.</p>
+                <button id="learnMore">Learn More</button>
+                <p id="moreInfo" style="display:none;">This web app is built to showcase various web development skills, including responsive design, JavaScript interactivity, and basic animations.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a team of web developers passionate about creating intuitive and interactive web applications. Our mission is to build web solutions that are both user-friendly and visually appealing.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service">
+                        <h3>Web Development</h3>
+                        <p>High-quality web development services using the latest technologies.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Responsive Design</h3>
+                        <p>Designs that work seamlessly on all devices, from mobile to desktop.</p>
+                    </div>
+                    <div class="service">
+                        <h3>SEO Optimization</h3>
+                        <p>Improving your website's search engine rankings and visibility.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Consulting</h3>
+                        <p>Expert advice on web development and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="messageInput" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <p id="contactStatus"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Web App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to  Interactivity -->
     <script src="script.js"></script>
 </body>
+
 </html>
