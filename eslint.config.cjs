@@ -18,7 +18,8 @@ module.exports = [
     // ESLint recommended rules
     {
         rules: {
-            'no-unused-vars': 'warn', // Example rule
+            'no-unused-vars': 'warn',
+            'no-console': 'off',
             'semi': ['error', 'always'],
             // Add more rules as needed
         },
