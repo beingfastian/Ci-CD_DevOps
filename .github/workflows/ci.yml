@@ -17,22 +17,11 @@ jobs:
         with:
           node-version: '18'  # Update to the latest LTS version
 
-      - name: Cache npm dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-
       - name: Install dependencies
-        run: npm ci  # Use npm ci instead of npm install
-
-      - name: List Node modules bin
-        run: ls -l ./node_modules/.bin  # Check the executable path
+        run: npm install
 
       - name: Run Linter
-        run: ./node_modules/.bin/eslint .  # Run ESLint directly
+        run: npx eslint .  # Use npx to run ESLint
 
       - name: Clear npm cache
         run: npm cache clean --force
@@ -54,4 +43,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}  # Your DockerHub password stored as a secret
 
       - name: Push Docker image
-        run: docker push hanzla908/hanzala-web:latest
+        run: docker push hanzla908/my-app:latest
