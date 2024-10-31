@@ -1,0 +1,13 @@
+{
+  "name": "hanzala",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^9.13.0",
+    "jest": "^29.7.0"
+  }
+}
